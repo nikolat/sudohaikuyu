@@ -1,0 +1,10 @@
+charset,UTF-8
+type,plugin
+name,すどはいくゅう
+id,40ff4eb0-4f7e-11ec-8072-0800200c9a66
+filename,akari.dll
+craftman,Don
+craftmanurl,https://github.com/nikolat/sudohaikuyu/releases
+homeurl,https://raw.githubusercontent.com/nikolat/sudohaikuyu/main/
+secondchangeinterval,0
+readme.charset,UTF-8
