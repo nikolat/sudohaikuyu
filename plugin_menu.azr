@@ -270,6 +270,7 @@ array getJsonTL(string url)
 		array images = {};
 		post = convertHtml(post);	// 実態参照変換
 		post = convertUnicode(post);
+		post = _strreplace(post, "\/", "/");
 		keyword = convertUnicode(keyword);
 		name = convertUnicode(name);
 		if (dIconPath[sname] == nil)
