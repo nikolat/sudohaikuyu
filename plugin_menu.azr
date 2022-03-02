@@ -257,6 +257,8 @@ TH_GetAllToots()
 array getJsonTL(string url)
 {
 	array arJson = _httpget(url, "utf8");
+	if (_aryvn(arJson) == 0)
+		return {};
 	array arTLTmp = _json2azv(arJson);
 	array arTLAdd;
 	int n = _aryvn(arTLTmp);
