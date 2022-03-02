@@ -19,7 +19,7 @@ loadPlugin()
 	// reservedScriptを設定してOnGhostBootでnotifypluginを実行
 	// sender, hwnd, ownedSSTPidを取得して後続のDSSTPを実行できるようにする
 	isInit = 1;
-	reservedScript = "\C\![notifyplugin," + pluginname() + ",OnMenuExec]\e";
+	reservedScript = "\C\![notifyplugin," + pluginid() + ",OnMenuExec]\e";
 }
 TH_LoadPlugin()
 {
@@ -55,7 +55,7 @@ TH_CheckUpdatePlugin()
 	string versionNow = _strsplit(version(), "/")[1];
 	if ((0.5 * versionNow) < (0.5 * versionNext))
 	{
-		speakBySSTP("\C\![raiseplugin," + pluginname() + ",OnShowPopUpUpdate," + versionNext + "]\e");
+		speakBySSTP("\C\![raiseplugin," + pluginid() + ",OnShowPopUpUpdate," + versionNext + "]\e");
 	}
 }
 string OnShowPopUpUpdate(dict ref)
@@ -175,7 +175,7 @@ string OnTrayBalloonClick(dict ref)
 	if (_strstr(title, pluginname() + " 新着") >= 0)
 	{
 		if (balloonWidth < 100)
-			return "\![raiseplugin," + pluginname() + ",OnMenuExec]\e";
+			return "\![raiseplugin," + pluginid() + ",OnMenuExec]\e";
 		else
 			return showHomeTL();
 	}
@@ -210,6 +210,10 @@ string craftmanurl()
 string homeurl()
 {
 	return "https://raw.githubusercontent.com/nikolat/sudohaikuyu/main/";
+}
+string pluginid()
+{
+	return "40ff4eb0-4f7e-11ec-8072-0800200c9a66";
 }
 string pluginnameen()
 {

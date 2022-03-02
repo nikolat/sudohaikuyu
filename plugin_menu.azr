@@ -48,7 +48,7 @@ TH_InitPlugin()
 		funcName = "showHomeTL";
 	else
 		funcName = "showSettingMenu";
-	speakBySSTP("\![raiseplugin," + pluginname() + "," + funcName + "]\e");
+	speakBySSTP("\![raiseplugin," + pluginid() + "," + funcName + "]\e");
 }
 //******************************************************************************
 // メニューアイコン
@@ -145,7 +145,7 @@ string setTimerraise()
 	if (dictSaveData["TL_get_interval"] >= 0)
 	{
 		s += "\![timerraiseplugin," + (60 * 1000 * dictSaveData["TL_get_interval"]) + ",0,"
-			+ pluginname() + ",PopUpTL]";
+			+ pluginid() + ",PopUpTL]";
 	}
 	return s;
 }
@@ -235,7 +235,7 @@ TH_UpdateAll()
 {
 	_sleep(0.5);	//ちょっと待たないと固まったように見える
 	TH_GetAllToots();
-	speakBySSTP("\![raiseplugin," + pluginname() + ",showHomeTL]\e");
+	speakBySSTP("\![raiseplugin," + pluginid() + ",showHomeTL]\e");
 }
 //------------------------------------------------------------------------------
 // 関数名：TH_GetAllToots
@@ -505,7 +505,7 @@ TH_PopUpTL()
 	string url = "https://h.sudo.ne.jp/api/timeline/public";
 	arHomeNext = getJsonTL(url);
 	sHome = "";
-	speakBySSTP("\C\![raiseplugin," + pluginname() + ",showPopUpTL]\e");
+	speakBySSTP("\C\![raiseplugin," + pluginid() + ",showPopUpTL]\e");
 }
 //-------------------------------------------------------
 // 関数名：showPopUpTL
