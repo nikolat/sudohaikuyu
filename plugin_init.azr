@@ -227,5 +227,5 @@ string pluginname()
 }
 string version()
 {
-	return "sudohaikuyu/0.1";
+	return "sudohaikuyu/0.2";
 }
