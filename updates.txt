@@ -12,10 +12,10 @@ file,image/fam_wrench.pnga137eb4441860564ce1655357af26de8size=610date=2012-12
 file,install.txtafbcd61c5ccfcb27bdec0495fbeef812size=75date=2012-12-21T00:00:00
 file,licence.txt3b82f29dc496662f0d841e29df04531fsize=1925date=2012-12-21T00:00:00
 file,main.azr6a9a91bc6d3c053c73deca7e82b72433size=2943date=2012-12-21T00:00:00
-file,plugin_init.azr1d3217168cb89884ab25995f9dee234bsize=6442date=2012-12-21T00:00:00
-file,plugin_menu.azrd06f48f08dc12e08965ea0a3fd37ae8dsize=19233date=2012-12-21T00:00:00
+file,plugin_init.azrb7495213658829d1e44f32d29948a06bsize=6542date=2012-12-21T00:00:00
+file,plugin_menu.azre88eb3a5db90b139a08e7e5fe4a5bb3dsize=19264date=2012-12-21T00:00:00
 file,plugin_util.azr52955cab2b7f3d6dcc9126f0149bb9b5size=14068date=2012-12-21T00:00:00
-file,readme.txtbfc046454e7fc4d0599be7525bf97ca2size=1616date=2012-12-21T00:00:00
+file,readme.txt1d3ae7da54514b32c8c50064360298d5size=1829date=2012-12-21T00:00:00
 file,saori/HandUtil/HandUtil.dlld382e237a4b365a302b281664d9e9d36size=38400date=2012-12-21T00:00:00
 file,saori/HandUtil/HandUtil_readme.txtc6c761a051d6970b022e1aaffe24d11asize=4362date=2012-12-21T00:00:00
 file,saori/imgctl_saori/imgctl.dll1e781386e8e88d567ff9db96dfe2956csize=442368date=2012-12-21T00:00:00
